@@ -25,11 +25,11 @@ public class CarSeller extends Thread {
                     printBorder();
                     wait();
                 }
-                Thread.sleep(THREAD_SHORT_SLEEP);
+
                 System.out.println("Покупатель " + Thread.currentThread().getName() + " купил новую машину");
                 printBorder();
             }
-
+            Thread.sleep(THREAD_SHORT_SLEEP);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
